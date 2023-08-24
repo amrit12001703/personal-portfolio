@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <!-- Connects CSS file to HTML -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- --------------------------------Header------------------------------ -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Amrit</span><br>Anand From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------About-------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user2.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ad pariatur, vitae officia unde
+                    dolore veniam molestias. Repellendus veritatis reprehenderit quasi, quam optio libero quae iusto
+                    labore animi incidunt perferendis rem esse, aspernatur ullam dolores accusantium praesentium odit!
+                    Delectus placeat excepturi nobis impedit doloremque dolorem quas odit blanditiis esse nesciunt
+                    facere dignissimos, sint corporis asperiores numquam culpa quisquam minima modi animi pariatur
+                    debitis saepe. Praesentium et debitis impedit saepe aspernatur facilis deserunt quas voluptatibus
+                    officiis nesciunt, id maiores itaque mollitia consequatur omnis non. Similique maiores incidunt quis
+                    minus esse illum laborum quam. Eaque ipsam mollitia iste? Libero reprehenderit incidunt veniam.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java Backend Development</span><br>Developing Backend of loan origination system</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Problem Solving</span><br>Solved 350+ DSA problems</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Oct 2022 - July 2023</span><br>Software Development Intern at Northern Arc Capital (Chennai, India)</li>
+                            <li><span>July 2022 - Sep 2022</span><br>Technology Program Analyst Intern at Fiserv (Chennai, India)</li>
+                            <li><span>July 2021 - June 2022</span><br>Technology Content Creator at GeeksforGeeks</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>B.Tech in Computer Science and Engineering<br>Lovely Professional University, Punjab</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------Services---------------------->
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+
+</html>
