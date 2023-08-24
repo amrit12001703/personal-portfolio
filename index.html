@@ -24,8 +24,9 @@
                 </ul>
             </nav>
             <div class="header-text">
-                <p>Software Developer</p>
-                <h1>Hi, I'm <span>Amrit</span><br>Anand From India</h1>
+                <p>A Budding Software Developer</p>
+                <h1>Hi, I'm <span>Amrit</span><br>Anand From <span class="saffron">In</span><span
+                        class="white">di</span><span class="green">a.</span></h1>
             </div>
         </div>
     </div>
@@ -37,15 +38,16 @@
                     <img src="images/user2.jpg" alt="">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ad pariatur, vitae officia unde
-                    dolore veniam molestias. Repellendus veritatis reprehenderit quasi, quam optio libero quae iusto
-                    labore animi incidunt perferendis rem esse, aspernatur ullam dolores accusantium praesentium odit!
-                    Delectus placeat excepturi nobis impedit doloremque dolorem quas odit blanditiis esse nesciunt
-                    facere dignissimos, sint corporis asperiores numquam culpa quisquam minima modi animi pariatur
-                    debitis saepe. Praesentium et debitis impedit saepe aspernatur facilis deserunt quas voluptatibus
-                    officiis nesciunt, id maiores itaque mollitia consequatur omnis non. Similique maiores incidunt quis
-                    minus esse illum laborum quam. Eaque ipsam mollitia iste? Libero reprehenderit incidunt veniam.</p>
+                    <h2 class="sub-title">About Me</h2>
+                    <p>Hello! I'm Amrit Anand, a recent graduate with a B-Tech degree in Computer Science and
+                        Engineering. With a boundless passion for technology, I'm on an exciting journey to explore and
+                        innovate in the world of software development. <br><br>
+
+                        Equipped with a strong foundation in coding and a knack for finding creative solutions, I'm
+                        excited to embark on a career that combines my technical prowess with my passion for innovation.
+                        Let's connect and explore the possibilities of collaborating on something remarkable.<br><br>
+
+                        Looking forward to the journey ahead!</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -54,23 +56,30 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Java Backend Development</span><br>Developing Backend of loan origination system</li>
-                            <li><span>Web Development</span><br>Web App Development</li>
-                            <li><span>Problem Solving</span><br>Solved 350+ DSA problems</li>
+                            <li><span>Programming Languages:</span><br>Java, C++, Python, JavaScript</li>
+                            <li><span>Software Development:</span><br>Spring Boot, Java, REST APIs, HTML, CSS, <br>React, JavaScript</li>
+                            <li><span>Database Management:</span><br>PostgreSQL, MySQL</li>
+                            <li><span>Other Tools/Technologies:</span><br>Git/GitHub, Visual Studio Code, <br>IntelliJ, Postman, DBeaver</li>
                         </ul>
                     </div>
 
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>Oct 2022 - July 2023</span><br>Software Development Intern at Northern Arc Capital (Chennai, India)</li>
-                            <li><span>July 2022 - Sep 2022</span><br>Technology Program Analyst Intern at Fiserv (Chennai, India)</li>
-                            <li><span>July 2021 - June 2022</span><br>Technology Content Creator at GeeksforGeeks</li>
+                            <li><span>Oct 2022 - July 2023</span><br>Software Development Intern at Northern Arc Capital
+                                (Chennai, India)</li>
+                            <li><span>July 2022 - Sep 2022</span><br>Technology Program Analyst Summer Internship at Fiserv
+                                (Chennai, India)</li>
+                            <li><span>July 2021 - June 2022</span><br>Technology Content Creator at GeeksforGeeks (Part Time)</li>
+                            <li><span>June 2021 - July 2021</span><br>Frontend Web Development (Summer Internship) at upGrad </li>
                         </ul>
                     </div>
 
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2023</span><br>B.Tech in Computer Science and Engineering<br>Lovely Professional University, Punjab</li>
+                            <li><span>2023</span><br>B.Tech in Computer Science and Engineering at<br>Lovely Professional
+                                University, Punjab</li>
+                            <li><span>2019</span><br>Polytechnic in Mechanical Engineering at<br>Sandip University (SBTE), Bihar</li>
+                            <li><span>2016</span><br>10th<br>Jesus and Mary Academy (CBSE), Bihar</li>   
                         </ul>
                     </div>
                 </div>
@@ -81,13 +90,13 @@
     <!----------------------Services---------------------->
 
     <script>
-        var tablinks=document.getElementsByClassName("tab-links");
-        var tabcontents=document.getElementsByClassName("tab-contents");
-        function opentab(tabname){
-            for(tablink of tablinks){
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
                 tablink.classList.remove("active-link");
             }
-            for(tabcontent of tabcontents){
+            for (tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab");
             }
             event.currentTarget.classList.add("active-link");
